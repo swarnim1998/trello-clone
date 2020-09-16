@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Paper } from "@material-ui/core";
 import Title from "./Title";
-import Card from "./Card.js";
+import Card from "./Card";
 import Input from "./InputContainer";
 import Axios from "axios";
 import { token, api_key } from "../config";
@@ -58,6 +58,7 @@ export default class List extends Component {
               />
             );
           })}
+          <Input addCard={this.addCard} />
         </Paper>
       </div>
     );
